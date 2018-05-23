@@ -1,0 +1,19 @@
+{
+  "name": "format-email",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/format-email",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "base64-js": "^1.3.0",
+    "encode-utf8": "^1.0.2",
+    "is-ascii": "^1.0.0"
+  },
+  "keywords": [
+    "email",
+    "format",
+    "rfc5322"
+  ]
+}
