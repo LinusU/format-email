@@ -37,7 +37,7 @@ module.exports = function formatEmail (from, to, subject, body) {
 
   headers.push(`From: ${from}`)
   headers.push(`To: ${to}`)
-  headers.push(`Subject: ${subject}`)
+  headers.push(isASCII(subject) ? `Subject: ${subject}` : `Subject: =?utf-8?B?${base64EncodeBody(subject)}?=`)
 
   return [...headers, '', encodedBody].join('\r\n')
 }
